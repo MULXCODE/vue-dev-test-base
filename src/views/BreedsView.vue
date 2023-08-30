@@ -2,7 +2,7 @@
   <div class="breeds">
     <h1>Breeds</h1>
     <!-- <img alt="Logo" src="../assets/logo.png" /> -->
-    <BreedsList />
+    <BreedsList msg="hello from View layer" />
   </div>
 </template>
 
