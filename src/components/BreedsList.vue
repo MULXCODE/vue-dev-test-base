@@ -2,10 +2,12 @@
   <div class="breeds-list">
     <h1>Breeds List</h1>
     <button class="button" @click="setup()">List All Breeds from API</button>
+    <mwc-button raised label="Material Web Component Button"></mwc-button>
+
     <!-- {{ msg }} -->
     {{ store.state.breedsLoaded }}
     
-    <li v-for="(breed, key) in data" :key="key">{{ key}}</li>
+    <li v-for="(breed, key) in data" :key="key"><div class="list-card">{{ key}}</div></li>
 
     <!-- {{ data }} -->
   </div>
@@ -16,6 +18,7 @@ import { Options, Vue } from "vue-class-component";
 import { useStore } from 'vuex'
 import axios from 'axios';
 import store from '@/store';
+import '@material/mwc-button';
 
 
 @Options({
@@ -89,6 +92,16 @@ a {
   border: none;
   color: white;
   padding: 8px 32px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.list-card {
+  background-color: #ffffff;
+  border: 0.5px solid #15603e;
+  padding: 32px 16px;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
