@@ -1,17 +1,23 @@
 import { createStore } from "vuex";
 import { mutations, STORAGE_KEY } from './mutations'
 
+
 export default createStore({
   state: {
     breedsLoaded: false,
-    breedList: [],
+    breeds: [],
+    breedImages: [],
     selectedBreeds: [],
     maxImages: 10,
     },
   getters: {},
-  mutations: {},
-          
-  
+  mutations: {
+
+// breadsLoaded(state: { breedsLoaded: boolean; }, loaded: boolean) {
+//   state.breedsLoaded = loaded;
+
+// }
+  },
   actions: {},
   modules: {},
 });

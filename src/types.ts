@@ -10,7 +10,7 @@ export interface Breed {
   }
   
   export interface AppState {
-    selectedBreeds: string[];
+    selectedBreeds: [];
     maxImages: number;
     breedList: Breed[];
     breedImages: Record<string, string[]>;
